@@ -28,6 +28,9 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_SHIPPING_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := 30
 
+# Camera
+$(call inherit-product-if-exists, vendor/xiaomi/vayu-miuicamera/products/miuicamera.mk)
+
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
@@ -43,10 +46,6 @@ PRODUCT_COPY_FILES += \
 # WiFi
 PRODUCT_PACKAGES += \
     VayuWifiOverlay
-
-# Setup
-PRODUCT_PACKAGES += \
-    PixelSetupWizardResTarget
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

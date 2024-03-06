@@ -31,7 +31,11 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_vayu
 TARGET_KERNEL_CONFIG := vayu_user_defconfig
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Sepolicy
+include vendor/xiaomi/vayu-miuicamera/products/board.mk
 
 # Inherit from the proprietary version
 include vendor/xiaomi/vayu/BoardConfigVendor.mk
