@@ -27,11 +27,6 @@ echo 'Cloning the vendor'
 git clone https://github.com/ProjectElixir-Devices/vendor_xiaomi_vayu.git -b A14 vendor/xiaomi
 echo 'Done'
 
-echo 'Cloning the miuicamera'
-# MiuiCamera
-git clone https://github.com/hirero-kazuwa/vendor_xiaomi_vayu-miuicamera-elixir.git vendor/xiaomi/vayu-miuicamera
-echo 'Done'
-
 echo 'Cloning Frameworks'
 git clone https://github.com/Evolution-X/frameworks_av -b uqpr2 frameworks/av
 git clone https://github.com/ProjectElixir-Staging/native -b uqpr2 frameworks/native
