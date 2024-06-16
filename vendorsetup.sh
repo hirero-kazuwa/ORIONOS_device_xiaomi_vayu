@@ -5,8 +5,6 @@ rm -rf device/xiaomi/sm8150-common
 rm -rf vendor/xiaomi
 rm -rf kernel/xiaomi
 rm -rf vendor/qcom/opensource/vibrator
-rm -rf frameworks/native
-rm -rf frameworks/av
 rm -rf system/libhwbinder
 echo 'Done'
 
@@ -25,11 +23,6 @@ echo 'Done'
 echo 'Cloning the vendor'
 # Vendor
 git clone https://github.com/ProjectElixir-Devices/vendor_xiaomi_vayu.git -b A14 vendor/xiaomi
-echo 'Done'
-
-echo 'Cloning Frameworks'
-git clone https://github.com/Evolution-X/frameworks_av -b uqpr2 frameworks/av
-git clone https://github.com/ProjectElixir-Staging/native -b uqpr2 frameworks/native
 echo 'Done'
 
 echo 'Cloning the Vibrator and Libhwbinder'
