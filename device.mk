@@ -11,7 +11,8 @@ $(call inherit-product, device/xiaomi/sm8150-common/msmnile.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    DeviceAsWebcamVayu
 
 # QDCM
 PRODUCT_COPY_FILES += \
@@ -29,7 +30,7 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := 30
 
 # Camera
-#$(call inherit-product-if-exists, vendor/xiaomi/vayu-miuicamera/products/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/vayu-miuicamera/products/miuicamera.mk)
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30

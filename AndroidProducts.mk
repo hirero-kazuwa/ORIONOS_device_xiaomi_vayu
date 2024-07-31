@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_vayu.mk
+    $(LOCAL_DIR)/orion_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_vayu-user \
-    aosp_vayu-userdebug \
-    aosp_vayu-eng
+    orion_vayu-user \
+    orion_vayu-userdebug \
+    orion_vayu-eng
