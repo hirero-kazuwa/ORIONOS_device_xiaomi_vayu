@@ -18,7 +18,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # OrionOS
 ORION_MAINTAINER := ぞうしろかずわ
 ORION_MAINTAINER_LINK := https://t.me/KazuwaZoshiro
-ORION_BUILD_TYPE := UNOFFICIAL
+ORION_BUILD_TYPE := OFFICIAL
 ORION_GAPPS := true
 TARGET_ENABLE_BLUR := false
 TARGET_BOOT_ANIMATION_RES := 1080
